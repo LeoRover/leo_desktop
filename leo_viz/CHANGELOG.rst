@@ -2,8 +2,8 @@
 Changelog for package leo_viz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.1 (2020-10-06)
+------------------
 * Changed the release repository for the package
 
 0.2.0 (2020-06-19)

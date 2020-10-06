@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>leo_desktop</name>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <description>Metapackage of software for operating Leo Rover from ROS dekstop</description>
 
   <maintainer email="blazej@turtlerover.com">Błażej Sowa</maintainer>
