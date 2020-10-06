@@ -2,10 +2,14 @@
 Changelog for package leo_viz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Changed the release repository for the package
+
 0.2.0 (2020-06-19)
 ------------------
-* Add Rviz configurations for odometry, slam and navigation
-* Add Image panel to default config, change default config name from model to robot
+* Added Rviz configurations for odometry, slam and navigation
+* Added Image panel to default config, changed default config name from model to robot
 
 0.1.1 (2020-06-07)
 ------------------
