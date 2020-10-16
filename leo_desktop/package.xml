@@ -2,7 +2,9 @@
 <package format="2">
   <name>leo_desktop</name>
   <version>0.2.1</version>
-  <description>Metapackage of software for operating Leo Rover from ROS dekstop</description>
+  <description>
+    Metapackage of software for operating Leo Rover from ROS desktop
+  </description>
 
   <maintainer email="blazej@turtlerover.com">Błażej Sowa</maintainer>
   <author email="blazej@turtlerover.com">Błażej Sowa</author>
@@ -16,6 +18,7 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <exec_depend>leo_viz</exec_depend>
+  <exec_depend>leo</exec_depend>
 
   <export>
     <metapackage />
