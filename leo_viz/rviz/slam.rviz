@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
       Splitter Ratio: 0.5
-    Tree Height: 446
+    Tree Height: 480
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -25,7 +25,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScan
+    SyncSource: ""
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -61,48 +61,6 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        camera_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        hokuyo_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        imu:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        laser_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        wheel_FL_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wheel_FR_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wheel_RL_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wheel_RR_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -111,7 +69,7 @@ Visualization Manager:
       Visual Enabled: true
     - Class: rviz/Image
       Enabled: false
-      Image Topic: /camera/image_raw
+      Image Topic: camera/image_raw
       Max Value: 1
       Median window: 5
       Min Value: 0
@@ -142,6 +100,7 @@ Visualization Manager:
       Keep: 10
       Name: Odometry
       Position Tolerance: 0.10000000149011612
+      Queue Size: 10
       Shape:
         Alpha: 1
         Axes Length: 1
@@ -152,7 +111,7 @@ Visualization Manager:
         Shaft Length: 1
         Shaft Radius: 0.05000000074505806
         Value: Arrow
-      Topic: /odometry/filtered
+      Topic: odometry/filtered
       Unreliable: false
       Value: false
     - Alpha: 0.699999988079071
@@ -161,7 +120,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Map
-      Topic: /map
+      Topic: map
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -190,7 +149,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.009999999776482582
       Style: Flat Squares
-      Topic: /scan
+      Topic: scan
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -219,10 +178,11 @@ Visualization Manager:
       Head Length: 0.30000001192092896
       Head Radius: 0.10000000149011612
       Name: AMCL Pose
+      Queue Size: 10
       Shaft Length: 1
       Shaft Radius: 0.05000000074505806
       Shape: Arrow
-      Topic: /amcl_pose
+      Topic: amcl_pose
       Unreliable: false
       Value: false
     - Alpha: 1
@@ -235,10 +195,11 @@ Visualization Manager:
       Head Length: 0.07000000029802322
       Head Radius: 0.029999999329447746
       Name: AMCL Particle Cloud
+      Queue Size: 10
       Shaft Length: 0.23000000417232513
       Shaft Radius: 0.009999999776482582
       Shape: Arrow (Flat)
-      Topic: /particlecloud
+      Topic: particlecloud
       Unreliable: false
       Value: false
   Enabled: true
@@ -280,26 +241,25 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Scale: 94.77957916259766
       Target Frame: base_link
-      Value: TopDownOrtho (rviz)
       X: 0
       Y: 0
     Saved: ~
 Window Geometry:
-  "&Displays":
-    collapsed: false
-  "&Time":
-    collapsed: false
-  "&Views":
+  Displays:
     collapsed: false
   Height: 707
   Hide Left Dock: false
   Hide Right Dock: false
   Image:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000001bb0000020bfc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000007601000003fb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c00610079007301000000440000020b000000f701000003fb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d006100670065000000013c00000113000000220100000300000001000001100000020bfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0056006900650077007301000000440000020b000000d001000003fb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000005560000004cfc0100000002fb0000000800540069006d0065010000000000000556000002ad01000003fb0000000800540069006d00650100000000000004500000000000000000000002890000020b00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000001bb0000021bfc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003b0000021b000000c700fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d0061006700650000000143000001130000001600ffffff00000001000001100000021bfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003b0000021b000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000005560000004cfc0100000002fb0000000800540069006d00650100000000000005560000024400fffffffb0000000800540069006d006501000000000000045000000000000000000000027f0000021b00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
+  Time:
+    collapsed: false
   Tool Properties:
+    collapsed: false
+  Views:
     collapsed: false
   Width: 1366
   X: 0
