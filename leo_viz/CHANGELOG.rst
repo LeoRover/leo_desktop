@@ -2,8 +2,8 @@
 Changelog for package leo_viz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.3 (2020-12-18)
+------------------
 * Use relative topic names in RViz displays
 * Change fixed frame to base_footprint in the default RViz config
 
