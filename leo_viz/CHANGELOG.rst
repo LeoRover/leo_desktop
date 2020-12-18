@@ -2,6 +2,11 @@
 Changelog for package leo_viz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Use relative topic names in RViz displays
+* Change fixed frame to base_footprint in the default RViz config
+
 0.2.2 (2020-10-16)
 ------------------
 * Update cmake minimum version, change CMakeLists formatting
