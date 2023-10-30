@@ -2,9 +2,10 @@
 
   <arg name="gui" default="true" />
   <arg name="model" default="$(find leo_description)/urdf/leo.urdf.xacro"/>
+  <arg name="mecanum_wheels" default="false"/>
 
   <param name="robot_description" 
-         command="$(find xacro)/xacro --inorder $(arg model)"/>
+         command="$(find xacro)/xacro $(arg model) mecanum_wheels:=$(arg mecanum_wheels)"/>
 
   <node name="robot_state_publisher"
         pkg="robot_state_publisher"
