@@ -2,6 +2,13 @@
 Changelog for package leo_viz
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add mecanum_wheels argument to view_model.launch (`#1 <https://github.com/LeoRover/leo_desktop/issues/1>`_)
+* Add xacro as exec dependency
+* Update author and maintainer info
+* Contributors: Aleksander Szymański, Błażej Sowa
+
 0.2.3 (2020-12-18)
 ------------------
 * Use relative topic names in RViz displays
